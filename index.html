@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="CV de Carl Amiel, développeur web en formation"
-    />
+    <meta name="description" content="CV de Carl Amiel, développeur web en formation" />
     <title>CV-BALITA-CARL</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -16,11 +13,13 @@
       <header>
         <div class="header-left">
           <h1>BALITA<br />Carl Amiel</h1>
+          <div class="titre">
           <p>DEVELOPPEUR WEB</p>
+        </div>
         </div>
 
         <div class="header-right">
-          <p>CONTACT</p>
+         <h1>Contact</h1>
           <p>☎️ : +33 6 29 21 98 05</p>
           <p>📧 : amiel.balita23@gmail.com</p>
           <p>📍: 15 Vieux Chemin de Sainte Anne, Saint Tropez</p>
@@ -28,17 +27,16 @@
       </header>
       <section class="profile">
         <h2><strong>Profil</strong></h2>
-        <p>
+        <p class="profile-text">
           Jeune, dynamique et motivé, je suis actuellement en formation à Mode
           83 pour préparer un titre professionnel de niveau Bac +2 dans le
-          domaine du développement web.<br />
-          Dans le cadre de ma formation, je suis à la recherche d’une entreprise
-          qui me permettra de mettre en pratique mes compétences acquises.<br />
-          Curieux et rigoureux, mon objectif est de contribuer activement à des
+          domaine du développement web. Dans le cadre de ma formation, je suis à la recherche d’une entreprise
+          qui me permettra de mettre en pratique mes compétences acquises. Curieux et rigoureux, mon objectif est de contribuer activement à des
           projets concrets, tout en continuant à apprendre et à évoluer dans un
           environnement stimulant.
         </p>
       </section>
+      <hr>
       <section class="two-columns">
         <div class="left-column">
           <section class="formation">
@@ -52,9 +50,10 @@
               en développement web,tant en front-end qu’en back-end.
             </p>
           </section>
-          <section class="histoire académique">
-            <h2><strong>Histoire Académique</strong></h2>
+          <hr>
 
+          <section class="histoire-académique">
+            <h2><strong>Histoire Académique</strong></h2>
             <div class="item-histoire">
               <h3>University of Batangas Lipa | 2017-2020</h3>
               <ul>
@@ -72,6 +71,7 @@
               <h3>RAN en Langue Française | 2022-2023</h3>
             </div>
           </section>
+          <hr>
           <section class="experience">
             <h2><strong>Experience</strong></h2>
             <div class="item-experience">
@@ -92,28 +92,50 @@
               </ul>
             </div>
           </section>
+          <hr>
 
           <section class="langues">
             <h2><strong>Langues</strong></h2>
             <div class="item-langues">
-              <ul>
-                <li><p>Philippin : Langue maternelle</p></li>
-                <li><p>Anglais : Courant</p></li>
-                <li><p>Français : Intermédiaire</p></li>
-              </ul>
-            </div>
+             <div class="langue">
+               <span class="langue-maternelle">Philippin</span>
+               <div class="skill-bar">
+                 <div class="skill-per" per="100%" style="width: 100%;"></div>
+              </div>
+             </div>
+
+                 <div class="item-langues">
+             <div class="langue">
+               <span class="langue-courant">Anglais</span>
+               <div class="skill-bar">
+                 <div class="skill-per" per="90%" style="width: 90%;"></div>
+              </div>
+
+             </div>
+                 <div class="item-langues">
+             <div class="langue">
+               <span class="langue-intermediare">Français</span>
+               <div class="skill-bar">
+                 <div class="skill-per" per="60%" style="width: 60%;"></div>
+              </div>
+             </div>
+                 </div>
+                     
           </section>
-          <section class="permis">
+          <hr>
+          <div class="permis">
             <h2><strong>Permis</strong></h2>
             <ul>
               <li><p>Permis AM - Moto</p></li>
               <li><p>Permis B - Voiture</p></li>
             </ul>
-          </section>
+          </div>
+        
         </div>
+        <section class="two-columns">
         <div class="right-column">
-          <aside class="right-sidebar">
-            <h2><strong>Compétences</strong></h2>
+          <h2><strong>Compétences</strong></h2>
+          <aside class="right-sidebar">           
             <h3>Savoir- faire</h3>
             <ul>
               <li><p>Coder</p></li>
@@ -148,7 +170,9 @@
             </ul>
           </aside>
         </div>
+        </section>
       </section>
+      
     </main>
   </body>
 </html>
