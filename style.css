@@ -1,236 +1,177 @@
-@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap");
-@page A4
-{
+@import url(https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap);
+.skill-bar,
+.skill-per {
+  height: 5px;
+  border-radius: 1px;
+}
+@page A4 {
   size: A4;
   margin: 20mm;
 }
-  body {
-    display: block;
-    font-family: "Alumni Sans SC", sans-serif;
-    margin: 0px;
-    padding: 0;
-    background-color: #ffffff;
-    font-size: 15px;
-  }
-
+body {
+  display: block;
+  font-family: "Alumni Sans SC", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-size: 15px;
+}
 header {
   display: flex;
   background-color: #4a90e2;
-  color: rgb(0, 0, 0);
+  color: #000;
   padding: 20px;
   text-align: center;
- 
 }
-
 .header-left {
   flex: 1;
   text-align: left;
   font-size: 20px;
-  
 }
-
-.titre{
+.titre {
   font-size: 30px;
 }
-
 .header-right {
   flex: 1;
   text-align: right;
   font-size: 15px;
   font-weight: 700;
-
 }
-
-.profile{
+.experience,
+.histoire-académique,
+.profile,
+.profile-text,
+.right-column {
   font-size: 20px;
 }
-
+.item-langues,
+.profile-text {
+  font-weight: 600;
+  max-width: none;
+}
 .profile-text {
   display: flex;
-  font-weight: 600;
   text-align: justify;
   flex-direction: column;
   align-items: center;
-  font-size: 20px;
-  max-width: none;
-
 }
-
-.formation {
-  font-weight: 600;
-  align-items: center;
-  font-size: 20px;
-  max-width: none;
-
-}
-
-.histoire-académique {
-  font-size: 20px;
-
-}
-
-.item-histoire{
-  font-weight: 600;
-  align-items: center;
-  font-size: 20px;
-  max-width: none;
-}
-
-.experience {
- font-size: 20px;
-}
-
-.item-experience {
-  font-weight: 600;
-  align-items: center;
-  font-size: 20px;
-  max-width: none;
-}
-
-.two-columns {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.right-column{
-  font-size: 20px;
-}
-
+.formation,
+.item-experience,
+.item-histoire,
+.langue-courant,
+.langue-intermediare,
+.langue-maternelle,
+.permis,
 .right-sidebar {
   font-weight: 600;
   align-items: center;
   font-size: 20px;
   max-width: none;
 }
-
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.langue,
+.skill-bar {
+  display: flex;
+  margin: 10px 0;
+}
 .item-langues {
-  font-weight: 600;
- flex-direction: column;
- width: 100%;
- max-width: none;
-
-}
-
-.langue{
-  display: flex;
   flex-direction: column;
-  margin: 10px 0;
-}
-
-.langue-maternelle {
-  font-weight: 600;
-  align-items: center;
-  font-size: 20px;
-  max-width: none;
-}
-
-.langue-courant {
-  font-weight: 600;
-  align-items: center;
-  font-size: 20px;
-  max-width: none;
-}
-
-.langue-intermediare {
-  font-weight: 600;
-  align-items: center;
-  font-size: 20px;
-  max-width: none;
-}
-
-.skill-bar{
-  height: 5px;
-  background: #fbfbfb;
-  border-radius: 1px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
 }
-
-.skill-per{
-  height: 5px;
+.langue {
+  flex-direction: column;
+}
+.skill-bar {
+  background: #fbfbfb;
+  width: 100%;
+  align-items: center;
+}
+.skill-per {
   background: green;
-  border-radius: 1px;
 }
- .permis{
-  font-weight: 600;
-  align-items: center;
-  font-size: 20px;
-  max-width: none;
- }
-
- @media print {
-
-    * {
+@media print {
+  body,
+  h1,
+  h2,
+  h3,
+  html {
+    font-size: 15px !important;
+  }
+  .skill-bar,
+  .skill-per {
+    height: 3px !important;
+  }
+  * {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
-
   @page {
     size: A4;
     margin: 8mm;
   }
-
-  html, body {
-    font-size: 15px !important;
+  body,
+  html {
     line-height: 0.9 !important;
     margin: 0 !important;
     padding: 0 !important;
-    background: white !important;
-    color: black !important;
+    background: #fff !important;
+    color: #000 !important;
   }
-
   header {
     padding: 8px !important;
   }
-
-  section, div, .profile-text, .formation, .item-histoire, .item-experience, .right-sidebar {
+  .formation,
+  .item-experience,
+  .item-histoire,
+  .profile-text,
+  .right-sidebar,
+  div,
+  section {
     margin: 2px 0 !important;
     padding: 0 !important;
-  
   }
-
-  h1, h2, h3 {
-    font-size: 15px !important;
-    margin:  5px !important;
+  h1,
+  h2,
+  h3 {
+    margin: 5px !important;
   }
-
-  p, li {
+  li,
+  p {
     margin: 2px 0 !important;
   }
-
   .skill-bar {
-    height: 3px !important;
     margin: 4px 0 !important;
   }
-
-  .skill-per {
-    height: 3px !important;
-  }
-
   .two-columns {
     gap: 6px !important;
   }
-
-  .left, .main, .right,
-  .left-column, .right-column {
+  .left,
+  .left-column,
+  .main,
+  .right,
+  .right-column {
     width: 100% !important;
     padding: 0 !important;
     margin: 0 !important;
   }
-
-  .profile, .formation, .histoire-académique, .experience, .langues, .permis, .right-column{
+  .experience,
+  .formation,
+  .histoire-académique,
+  .langues,
+  .permis,
+  .profile,
+  .right-column {
     font-size: 20px !important;
   }
 }
-
 @media screen and (max-width: 700px) {
   .two-columns {
     flex-direction: column;
   }
-
   .left-column,
   .right-column {
     width: 100%;
