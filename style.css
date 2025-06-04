@@ -15,6 +15,9 @@ body {
   padding: 0;
   background-color: #fff;
   font-size: 15px;
+  background: linear-gradient(-45deg, #d4e09b, #f6f4d2, #cbdfbd, #f19c79);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
 }
 header {
   display: flex;
@@ -23,6 +26,8 @@ header {
   padding: 20px;
   text-align: center;
 }
+
+
 .header-left {
   flex: 1;
   text-align: left;
@@ -86,7 +91,7 @@ header {
   flex-direction: column;
 }
 .skill-bar {
-  background: #fbfbfb;
+  background: #df3a3a;
   width: 100%;
   align-items: center;
 }
@@ -201,6 +206,18 @@ header {
 
   .cv-link {
     font-size: 20px;
+  }
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 
 }
