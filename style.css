@@ -93,6 +93,23 @@ header {
 .skill-per {
   background: green;
 }
+
+
+.download-btn {
+  flex: 1  ;
+  padding: 10px 10px;
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.download-btn:hover {
+  background-color: #15ad57;
+}
+
 @media print {
   body,
   h1,
@@ -164,8 +181,13 @@ header {
   .langues,
   .permis,
   .profile,
-  .right-column {
+  .right-column,
+  .download-btn {
     font-size: 20px !important;
+  }
+
+    .download-btn {
+    display: none !important;
   }
 }
 @media screen and (max-width: 700px) {
@@ -176,4 +198,9 @@ header {
   .right-column {
     width: 100%;
   }
+
+  .cv-link {
+    font-size: 20px;
+  }
+
 }
