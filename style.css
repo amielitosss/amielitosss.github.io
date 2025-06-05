@@ -1,231 +1,334 @@
 @import url(https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap);
-.skill-bar,
-.skill-per {
-  height: 5px;
-  border-radius: 1px;
-}
-@page A4 {
-  size: A4;
-  margin: 20mm;
-}
+
+.main-nav ul,
 body {
-  display: block;
-  font-family: "Alumni Sans SC", sans-serif;
-  margin: 0px;
+  margin: 0;
   padding: 0;
-  background-color: #fff;
-  font-size: 15px;
-  background: linear-gradient(-45deg, #d4e09b, #f6f4d2, #cbdfbd, #f19c79);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
 }
-header {
-  display: flex;
-  background-color: #b07131;
+
+.profile-photo{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 16px;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.main-nav a,
+.skill-percent {
   color: #000;
-  padding: 20px;
-  text-align: center;
-}
-
-hr {
-  height: 5px;  /* Increase thickness */
-  border: none; /* Remove default border */
-  background-color: #000000; /* Set color */
-}
-
-.header-left {
-  flex: 1;
-  text-align: left;
-  font-size: 19px;
-}
-.titre {
-  font-size: 30px;
-}
-.header-right {
-  flex: 1;
-  text-align: right;
-  font-size: 19px;
   font-weight: 700;
 }
-.experience,
-.histoire-académique,
-.profile,
-.profile-text,
-.right-column {
-  font-size: 20px;
-}
-.item-langues,
-.profile-text {
-  font-weight: 600;
-  max-width: none;
-}
-.profile-text {
-  display: flex;
-  text-align: justify;
-  flex-direction: column;
-  align-items: center;
-}
-.formation,
+.contact,
 .item-experience,
+.item-formation,
 .item-histoire,
-.langue-courant,
-.langue-intermediare,
-.langue-maternelle,
-.permis,
-.right-sidebar {
+.item-langues,
+.item-permis,
+.main-nav a,
+.profile-text,
+.skill-percent {
+  font-weight: 700;
+}
+.contact,
+header {
+  animation: 15s infinite gradientBG;
+}
+.competence-col,
+.cv-link,
+.download-btn {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alumni Sans SC", sans-serif;
   font-weight: 600;
-  align-items: center;
+  background-image: url(bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 16px;
+}
+.header-left {
+  flex: 1;
   font-size: 20px;
-  max-width: none;
-}
-.two-columns {
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+  align-items: center;
+  gap: 16px;
 }
-.langue,
-.skill-bar {
+.main-nav ul {
+  list-style: none;
   display: flex;
-  margin: 10px 0;
+  gap: 20px;
+}
+.main-nav a {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.main-nav a:hover {
+  color: rgb(255, 255, 255);
+}
+.competences,
+.experience,
+.formation,
+.permis,
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  flex-direction: column;
+}
+.profile-text {
+  align-items: center;
+  display: flex;
+  margin: 20px;
+}
+.item-formation {
+  flex-direction: column;
+  align-items: left;
+}
+.histoire-academique {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+  flex-direction: column;
+}
+.item-histoire {
+  margin-top: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 0.8;
+}
+.item-experience {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.langues {
+  display: flex;
+  align-items: left;
+  gap: 20px;
+  font-size: 20px;
+  flex-direction: column;
 }
 .item-langues {
+  align-items: left;
+  display: flex;
   flex-direction: column;
-  width: 100%;
 }
-.langue {
+.footer,
+.item-permis {
+  align-items: center;
+  display: flex;
+}
+.item-competences {
+  display: flex;
+  font-weight: 700;
   flex-direction: column;
+  flex-wrap: wrap;
+}
+.competences-row {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.competence-col {
+  flex: 1 1 200px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 16px;
+  min-width: 220px;
+}
+.competence-col h3 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.footer {
+  gap: 20px;
+  font-size: 25px;
+  flex-direction: column;
+}
+.contact {
+  align-items: center;
+  display: flex;
+  background: linear-gradient(
+    -360deg,
+    #ff7b00ff,
+    #ff8800ff,
+    #ff9500ff,
+    #ffa200ff,
+    #ffaa00ff,
+    #ffb700ff,
+    #ffc300ff,
+    #ffd000ff,
+    #ffdd00ff,
+    #ffea00ff
+  );
+  background-size: 400% 400%;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-direction: column;
+}
+.skill-bar,
+.skill-per {
+  border-radius: 5px;
+  width: 100%;
+  margin: 8px 0;
+  height: 12px;
+}
+.cv-link,
+header {
+  display: flex;
+  margin: 0;
 }
 .skill-bar {
+  position: relative;
   background: #df3a3a;
-  width: 100%;
-  align-items: center;
 }
 .skill-per {
   background: green;
-}
-
-
-.download-btn {
-  flex: 1  ;
-  padding: 10px 10px;
-  background-color: #000000;
-  color: white;
   border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  text-align: center;
+  position: relative;
 }
-
+.skill-percent {
+  position: absolute;
+  right: 10px;
+  font-size: 15px;
+}
+.competences,
+.experience,
+.formation,
+.histoire-academique,
+.langues,
+.permis,
+.profile {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.cv-link {
+  width: 100%;
+  text-align: right;
+  overflow: visible;
+  justify-content: flex-end;
+}
+.download-btn {
+  min-width: 120px;
+  max-width: 100%;
+  padding: 10px 20px;
+  white-space: nowrap;
+  background-color: #000;
+  color: #fff;
+}
 .download-btn:hover {
-  background-color: #15ad57;
+  background-color: #4681c9;
 }
-
-@media print {
-  body,
-  h1,
-  h2,
-  h3,
-  html {
-    font-size: 15px !important;
-  }
-  .skill-bar,
-  .skill-per {
-    height: 3px !important;
-  }
-  * {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-  @page {
-    size: A4;
-    margin: 8mm;
-  }
-  body,
-  html {
-    line-height: 0.9 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    background: #fff !important;
-    color: #000 !important;
-    background: white !important;
-    animation: none !important;
-
-  }
-  header {
-    padding: 8px !important;
-  }
-  .formation,
-  .item-experience,
-  .item-histoire,
-  .profile-text,
-  .right-sidebar,
-  div,
-  section {
-    margin: 2px 0 !important;
-    padding: 0 !important;
-  }
-  h1,
-  h2,
-  h3 {
-    margin: 5px !important;
-  }
-  li,
-  p {
-    margin: 2px 0 !important;
-  }
-  .skill-bar {
-    margin: 4px 0 !important;
-  }
-  .two-columns {
-    gap: 6px !important;
-  }
-  .left,
-  .left-column,
-  .main,
-  .right,
-  .right-column {
-    width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  .experience,
-  .formation,
-  .histoire-académique,
-  .langues,
-  .permis,
-  .profile,
-  .right-column,
-  .download-btn {
-    font-size: 20px !important;
-  }
-
-    .download-btn {
-    display: none !important;
-  }
+.competences,
+.experience,
+.contact,
+.formation,
+.histoire-academique,
+.langues,
+.permis,
+.profile {
+  transition: transform 0.3s cubic-bezier(0.4, 2, 0.6, 1);
+  max-width: 100%;
+  width: 100%;
+  margin: 16px 0;
+  padding: 14px;
+  box-sizing: border-box;
 }
-@media screen and (max-width: 700px) {
-  .two-columns {
-    flex-direction: column;
-  }
-  .left-column,
-  .right-column {
-    width: 100%;
-  }
-
-  .cv-link {
-    font-size: 20px;
-  }
+.competences:hover,
+.experience:hover,
+.contact:hover,
+.formation:hover,
+.histoire-academique:hover,
+.langues:hover,
+.permis:hover,
+.profile:hover {
+  transform: scale(1.03);
+  z-index: 2;
 }
-
 @keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
+  0%,
+  100% {
+    background-position: 0 50%;
   }
   50% {
     background-position: 100% 50%;
   }
-  100% {
-    background-position: 0% 50%;
+}
+header {
+  background-color: #d77171;
+  text-align: left;
+  background: linear-gradient(
+    -360deg,
+    #ff7b00ff,
+    #ff8800ff,
+    #ff9500ff,
+    #ffa200ff,
+    #ffaa00ff,
+    #ffb700ff,
+    #ffc300ff,
+    #ffd000ff,
+    #ffdd00ff,
+    #ffea00ff
+  );
+  background-size: 400% 400%;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 12px;
+}
+.main-nav ul {
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+  align-items: flex-start;
+  padding-left: 0;
+}
+.download-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+@media (min-width: 700px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 0;
   }
-
+  .main-nav ul {
+    flex-direction: row;
+    gap: 20px;
+    font-size: 20px;
+    align-items: center;
+  }
+  .competences,
+  .experience,
+  .contact,
+  .formation,
+  .histoire-academique,
+  .langues,
+  .permis,
+  .profile {
+    max-width: 800px;
+    width: 90%;
+    margin: 24px auto;
+    padding: 24px;
+  }
+  .download-btn {
+    width: auto;
+    margin-top: 0;
+  }
 }

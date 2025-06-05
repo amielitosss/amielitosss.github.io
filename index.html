@@ -12,39 +12,43 @@
     <main class="cv-content">
       <header>
         <div class="header-left">
+          <img src="pfp.jpg" alt="Photo de Carl Amiel" class="profile-photo" />
           <h1>BALITA<br />Carl Amiel</h1>
           <div class="titre">
           <p>DEVELOPPEUR WEB</p>
-
           <div class="cv-link">
           <a href="CV-BALITA-CARL.pdf" download class="download-btn">Télécharger le CV</a>
           </div>
         </div>
         </div>
-
-        <div class="header-right">
-         <h1>Contact</h1>
-          <p>☎️ : +33 6 29 21 98 05</p>
-          <p>📧 : amiel.balita23@gmail.com</p>
-          <p>📍: 15 Vieux Chemin de Sainte Anne, Saint Tropez</p>
-        </div>
+        <nav class="main-nav">
+    <ul>
+      <li><a href="#profile">Profil</a></li>
+      <li><a href="#formation">Formation</a></li>
+      <li><a href="#histoire-academique">Histoire Académique</a></li>
+      <li><a href="#experience">Expérience</a></li>
+      <li><a href="#langues">Langues</a></li>
+      <li><a href="#permis">Permis</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
       </header>
-      <section class="profile">
+      <section id="profile" class="profile">
         <h2><strong>Profil</strong></h2>
-        <p class="profile-text">
-          Jeune, dynamique et motivé, je suis actuellement en formation à Mode
+        <div class="profile-text">
+         <p> Jeune, dynamique et motivé, je suis actuellement en formation à Mode
           83 pour préparer un titre professionnel de niveau Bac +2 dans le
           domaine du développement web. Dans le cadre de ma formation, je suis à la recherche d’une entreprise
           qui me permettra de mettre en pratique mes compétences acquises. Curieux et rigoureux, mon objectif est de contribuer activement à des
           projets concrets, tout en continuant à apprendre et à évoluer dans un
-          environnement stimulant.
-        </p>
+          environnement stimulant.</p>
+        </div>
       </section>
-      <hr>
-      <section class="two-columns">
-        <div class="left-column">
-          <section class="formation">
+     
+          <section id="formation" class="formation">
             <h2><strong>Formation</strong></h2>
+            <div class="item-formation">
             <h3>Développeur web et web mobile</h3>
             <ul>
               <li><p>MODE83 à Frejus (04/2025 au 01/2026)</p></li>
@@ -54,9 +58,9 @@
               en développement web,tant en front-end qu’en back-end.
             </p>
           </section>
-          <hr>
+   
 
-          <section class="histoire-académique">
+          <section id="histoire-academique" class="histoire-academique">
             <h2><strong>Histoire Académique</strong></h2>
             <div class="item-histoire">
               <h3>University of Batangas Lipa | 2017-2020</h3>
@@ -75,8 +79,8 @@
               <h3>RAN en Langue Française | 2022-2023</h3>
             </div>
           </section>
-          <hr>
-          <section class="experience">
+        
+          <section id="experience" class="experience">
             <h2><strong>Experience</strong></h2>
             <div class="item-experience">
               <h3>Employé polyvalent de restauration</h3>
@@ -96,15 +100,16 @@
               </ul>
             </div>
           </section>
-          <hr>
+         
 
-          <section class="langues">
+          <section  id="langues" class="langues">
             <h2><strong>Langues</strong></h2>
             <div class="item-langues">
              <div class="langue">
                <span class="langue-maternelle">Philippin</span>
                <div class="skill-bar">
                  <div class="skill-per" per="100%" style="width: 100%;"></div>
+                 <span class="skill-percent">100%</span>
               </div>
              </div>
 
@@ -113,6 +118,7 @@
                <span class="langue-courant">Anglais</span>
                <div class="skill-bar">
                  <div class="skill-per" per="90%" style="width: 90%;"></div>
+                 <span class="skill-percent">90%</span>
               </div>
 
              </div>
@@ -121,25 +127,26 @@
                <span class="langue-intermediare">Français</span>
                <div class="skill-bar">
                  <div class="skill-per" per="60%" style="width: 60%;"></div>
+                 <span class="skill-percent">60%</span>
               </div>
              </div>
                  </div>
                      
           </section>
-          <hr>
-          <div class="permis">
+       
+          <div id="permis" class="permis">
             <h2><strong>Permis</strong></h2>
             <ul>
               <li><p>Permis AM - Moto</p></li>
               <li><p>Permis B - Voiture</p></li>
             </ul>
           </div>
-        
         </div>
-        <section class="two-columns">
-        <div class="right-column">
+
+        <section id="competences" class="competences">
           <h2><strong>Compétences</strong></h2>
-          <aside class="right-sidebar">           
+          <div class="competences-row">
+            <div class="competence-col">
             <h3>Savoir- faire</h3>
             <ul>
               <li><p>Coder</p></li>
@@ -151,7 +158,8 @@
               </li>
               <li><p>Créer une documentation technique</p></li>
             </ul>
-
+            </div>
+            <div class="competence-col">
             <h3>Savoir- être professionels</h3>
             <ul>
               <li><p>Autonome</p></li>
@@ -161,7 +169,8 @@
                 <p>Prendre des initiatives et être force de proposition</p>
               </li>
             </ul>
-
+            </div>
+            <div class="competence-col">
             <h3>Savoir- Technique</h3>
             <ul>
               <li><p>HTML</p></li>
@@ -172,11 +181,23 @@
               <li><p>PYTHON</p></li>
               <li><p>BOOTSTRAP</p></li>
             </ul>
-          </aside>
+            </div>
         </div>
         </section>
       </section>
-      
+
+      <footer>
+        <section class="footer-text">
+           <div id="contact" class="contact">
+         <h1>Contact</h1>
+          <p>☎️ : +33 6 29 21 98 05</p>
+          <p>📧 : amiel.balita23@gmail.com</p>
+          <p>📍: 15 Vieux Chemin de Sainte Anne, Saint Tropez</p>
+        </div>
+        </section>
+      </footer>
+ 
+
     </main>
   </body>
 </html>
