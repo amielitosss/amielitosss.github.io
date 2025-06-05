@@ -7,8 +7,10 @@ body {
 }
 
 .profile-photo{
-  width: 80px;
-  height: 80px;
+  width: 20vw;           /* Responsive width */
+  max-width: 80px;       /* Limit max size */
+  min-width: 48px;
+  height: auto;
   object-fit: cover;
   border-radius: 50%;
   margin-right: 16px;
@@ -61,6 +63,7 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
+  flex-wrap: wrap;
 }
 .main-nav ul {
   list-style: none;
@@ -330,5 +333,24 @@ header {
   .download-btn {
     width: auto;
     margin-top: 0;
+  }
+}
+
+/* Responsive: Stack vertically on small screens */
+@media (max-width: 600px) {
+  .header-left {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+  }
+  .profile-photo {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  .cv-link {
+    width: 100%;
+    text-align: center;
+    margin: 0;
   }
 }
