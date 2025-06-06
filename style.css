@@ -1,31 +1,26 @@
 @import url(https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap);
-
 .main-nav ul,
 body {
   margin: 0;
   padding: 0;
 }
-
-.profile-photo{
-  width: 20vw;           /* Responsive width */
-  max-width: 80px;       /* Limit max size */
+.profile-photo {
+  width: 20vw;
+  max-width: 80px;
   min-width: 48px;
   height: auto;
   object-fit: cover;
   border-radius: 50%;
   margin-right: 16px;
   border: 2px solid #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
   display: inline-block;
   vertical-align: middle;
 }
-
-
 .main-nav a,
 .skill-percent {
   color: #000;
-  font-weight: 700;
 }
 .contact,
 .item-experience,
@@ -47,7 +42,6 @@ header {
 .download-btn {
   box-sizing: border-box;
 }
-
 body {
   font-family: "Alumni Sans SC", sans-serif;
   font-weight: 600;
@@ -65,17 +59,12 @@ body {
   gap: 16px;
   flex-wrap: wrap;
 }
-.main-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
 .main-nav a {
   text-decoration: none;
   transition: color 0.2s;
 }
 .main-nav a:hover {
-  color: rgb(255, 255, 255);
+  color: #fff;
 }
 .competences,
 .experience,
@@ -152,6 +141,10 @@ body {
   padding: 16px;
   min-width: 220px;
 }
+.footer,
+header {
+  flex-direction: column;
+}
 .competence-col h3 {
   text-align: center;
   margin-bottom: 12px;
@@ -159,24 +152,11 @@ body {
 .footer {
   gap: 20px;
   font-size: 25px;
-  flex-direction: column;
 }
 .contact {
   align-items: center;
   display: flex;
-  background: linear-gradient(
-    -36deg,
-    #ff7b00ff,
-    #ff8800ff,
-    #ff9500ff,
-    #ffa200ff,
-    #ffaa00ff,
-    #ffb700ff,
-    #ffc300ff,
-    #ffd000ff,
-    #ffdd00ff,
-    #ffea00ff
-  );
+  background: linear-gradient(-36deg, #ff7b00ff 0, #ffea00ff 100%);
   background-size: 400% 400%;
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -237,8 +217,8 @@ header {
   background-color: #4681c9;
 }
 .competences,
-.experience,
 .contact,
+.experience,
 .formation,
 .histoire-academique,
 .langues,
@@ -252,8 +232,8 @@ header {
   box-sizing: border-box;
 }
 .competences:hover,
-.experience:hover,
 .contact:hover,
+.experience:hover,
 .formation:hover,
 .histoire-academique:hover,
 .langues:hover,
@@ -274,26 +254,16 @@ header {
 header {
   background-color: #d77171;
   text-align: left;
-  background: linear-gradient(
-    -36deg,
-    #ff7b00ff,
-    #ff8800ff,
-    #ff9500ff,
-    #ffa200ff,
-    #ffaa00ff,
-    #ffb700ff,
-    #ffc300ff,
-    #ffd000ff,
-    #ffdd00ff,
-    #ffea00ff
-  );
+  background: linear-gradient(-36deg, #ff7b00ff 0, #ffea00ff 100%);
   background-size: 400% 400%;
-  flex-direction: column;
   align-items: flex-start;
   padding: 12px;
   gap: 12px;
 }
 .main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
   flex-direction: column;
   gap: 10px;
   font-size: 18px;
@@ -318,8 +288,8 @@ header {
     align-items: center;
   }
   .competences,
-  .experience,
   .contact,
+  .experience,
   .formation,
   .histoire-academique,
   .langues,
@@ -335,8 +305,6 @@ header {
     margin-top: 0;
   }
 }
-
-/* Responsive: Stack vertically on small screens */
 @media (max-width: 600px) {
   .header-left {
     flex-direction: column;
