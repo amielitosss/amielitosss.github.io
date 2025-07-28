@@ -1,0 +1,33 @@
+ .form-container {
+      background-color: #76101e;
+      color: #000;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 600px;
+      margin: 100px auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+    .form-control, .form-select {
+      border-radius: 10px;
+    }
+    .btn-submit {
+      background-color: #fff;
+      color: #000;
+      border-radius: 10px;
+    }
+    .btn-submit:hover {
+      background-color: #0dda36;
+    }
+
+     .fade-in {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+

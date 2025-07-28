@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projet personnel de développement web" />
+  <meta name="author" content="Carl Balita" />
+  <meta name="copyright" content="Carl Balita" />
+  <meta name="robots" content="index, follow" />
+  <link rel="shortcut icon" href="../image/logo.webp" type="image/x-icon" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Roboto&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/passion1.css" />
+
+  <title>Projet Perso</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <canvas id="stars"></canvas>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="../Html/index.html" class="d-flex align-items-center">
+          <img src="../image/logo.webp" alt="Logo" class="logo-image" loading="lazy" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <button type="button" class="btn-close btn-close-white ms-auto d-lg-none mb-4" aria-label="Fermer le menu" id="closeNav"></button>
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item bg-light rounded-3 mb-2"><a class="nav-link text-dark" href="../Html/index.html">Accueil</a></li>
+            <li class="nav-item bg-light rounded-3 mb-2"><a class="nav-link text-dark" href="../Html/index.html#projets">Projets</a></li>
+            <li class="nav-item bg-light rounded-3 mb-2"><a class="nav-link text-dark" href="../Html/apropos.html">À propos</a></li>
+            <li class="nav-item bg-light rounded-3 mb-2"><a class="nav-link text-dark" href="../Html/passion.html">Passion</a></li>
+            <li class="nav-item bg-light rounded-3 mb-2"><a class="nav-link text-dark" href="../Html/cv.html">CV</a></li>
+            <li class="nav-item bg-light rounded-3 mb-2"><a class="nav-link text-dark" href="../Html/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="flex-fill">
+    <!-- Parallax Top Section -->
+    <div class="parallax parallax-image">
+      <div class="content"></div>
+    </div>
+
+    <!-- Basketball Section -->
+    <section class="parallax parallax-black">
+      <div class="container py-5">
+        <div class="text-center text-white mb-5" style="background-color: #76101e; border-radius: 10px; padding: 2rem;">
+          <h2 class="fs-1"><strong>Basketball</strong></h2>
+          <p>Je pratique ce sport depuis que je suis enfant. J’ai participé à des tournois et des clubs, mais j’ai dû me concentrer sur mes études. Ce sport reste une passion inoubliable.</p>
+        </div>
+
+        <div class="row justify-content-center gx-4 mx-4">
+          <div class="col-12 col-md-5 mb-5">
+            <div class="ratio ratio-16x9">
+              <video controls preload="metadata" aria-label="Vidéo Basketball 1" width="100%" height="auto" style="object-fit: cover;">
+                <source src="../video/vid1.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la vidéo.
+              </video>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 mb-5">
+            <div class="ratio ratio-16x9">
+              <video controls preload="metadata" aria-label="Vidéo Basketball 2" width="100%" height="auto" style="object-fit: cover;">
+                <source src="../video/vid2.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la vidéo.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Passion Cards Section -->
+    <section>
+      <div class="container mb-5">
+        <div class="row justify-content-center g-4">
+          <div class="col-md-4">
+            <div class="card h-100 text-center">
+              <img src="../image/passion.webp" class="card-img-top" alt="Image passion principale" loading="lazy" />
+              <div class="card-body">
+                <a href="../Html/passion.html" class="btn btn-danger">Go Back to Passion Page</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center">
+              <img src="../image/coder.webp" class="card-img-top" alt="Passion Coding" loading="lazy" />
+              <div class="card-body">
+                <a href="../Html/passion2.html" class="btn btn-danger justify-content-center">Go to Passion Coding</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center">
+              <img src="../image/gaming.webp" class="card-img-top" alt="Passion Gaming" loading="lazy" />
+              <div class="card-body">
+                <a href="../Html/passion3.html" class="btn btn-danger justify-content-center">Go to Passion Gaming</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3 mt-auto">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-2 mb-md-0">© Copyright 2025 - Carl Balita</p>
+      <div class="d-flex gap-3">
+        <a href="https://www.facebook.com/share/1Beo8i9Qr6/" target="_blank" aria-label="Facebook">
+          <img src="../image/fb.webp" alt="Facebook" class="footer-icon" loading="lazy" />
+        </a>
+        <a href="https://github.com/amielitosss" target="_blank" aria-label="GitHub">
+          <img src="../image/github.webp" alt="GitHub" class="footer-icon" loading="lazy" />
+        </a>
+        <a href="https://www.instagram.com/crl_blt" target="_blank" aria-label="Instagram">
+          <img src="../image/ig.webp" alt="Instagram" class="footer-icon" loading="lazy" />
+        </a>
+        <a href="https://www.linkedin.com/in/carl-amiel-balita-470b562bb/" target="_blank" aria-label="LinkedIn">
+          <img src="../image/linkedin.webp" alt="LinkedIn" class="footer-icon" loading="lazy" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="../index.js"></script>
+</body>
+</html>
