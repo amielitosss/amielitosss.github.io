@@ -41,18 +41,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Titillium Web, sans-serif !important;
+  font-family: 'Titillium Web', sans-serif !important;
 }
+
 body,
 p,
 span {
-  font-family: Barlow Condensed, sans-serif !important;
+  font-family: 'Barlow Condensed', sans-serif !important;
 }
-.navbar-nav,
-.special-text,
-blockquote {
-  font-family: Orbitron, serif !important;
+
+.navbar-nav a {
+  font-family: 'Orbitron', sans-serif !important;
 }
+
 .navbar-nav .nav-link {
   position: relative;
   color: #133769 !important;
