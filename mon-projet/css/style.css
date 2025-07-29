@@ -3,15 +3,18 @@
 .navbar-nav .nav-link:hover::after {
   width: 100%;
 }
+
 body {
   line-height: 1.6;
   background: #0a0a0a;
   overflow-x: hidden;
   min-height: 100vh;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 .logo-image {
   display: flex;
   width: 100px;
@@ -19,15 +22,19 @@ html {
   margin: 20px;
   filter: drop-shadow(0 0 10px #133769);
 }
+
 .logo-image:hover {
   filter: drop-shadow(0 0 20px #76101e);
 }
+
 .navbar-nav {
   font-size: 25px;
 }
+
 .nav-item {
   margin: 0 15px;
 }
+
 #stars {
   position: fixed;
   top: 0;
@@ -35,6 +42,7 @@ html {
   height: 100%;
   z-index: -1;
 }
+
 h1,
 h2,
 h3,
@@ -54,6 +62,7 @@ span {
   font-family: 'Orbitron', sans-serif !important;
 }
 
+/* Base .nav-link styles first */
 .navbar-nav .nav-link {
   position: relative;
   color: #133769 !important;
@@ -62,6 +71,7 @@ span {
   padding-bottom: 4px;
 }
 
+/* ::after pseudo-element next */
 .navbar-nav .nav-link::after {
   content: "";
   position: absolute;
@@ -73,11 +83,13 @@ span {
   transition: width 0.3s;
 }
 
-.navbar-nav .nav-link:hover::after,
-.navbar-nav .nav-link:focus::after {
+/* :hover and :focus on ::after */
+.navbar-nav .nav-link:focus::after,
+.navbar-nav .nav-link:hover::after {
   width: 100%;
 }
 
+/* :hover and :focus on the link itself */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus {
   color: #76101e !important;
@@ -87,13 +99,16 @@ footer a img {
   filter: brightness(0) invert(1);
   transition: transform 0.2s;
 }
+
 footer a:hover img {
   transform: scale(1.9);
 }
+
 .footer-icon {
   width: 24px;
   height: 24px;
 }
+
 @media (max-width: 991px) {
   #navbar-nav {
     position: fixed;
@@ -112,4 +127,18 @@ footer a:hover img {
   body.nav-open {
     overflow: hidden;
   }
+}
+
+/* img-cv base styles before :hover */
+.img-cv {
+  width: 50%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #ffdf00;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.img-cv:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px #ffdf00;
 }

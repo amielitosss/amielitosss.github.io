@@ -7,20 +7,32 @@
   border-radius: 25px;
   transition: background-color 0.3s;
 }
-.img-cv,
-.img-cv:hover {
-  transition: transform 0.3s, box-shadow 0.3s;
-}
+
 .download-btn:hover {
   background-color: #76101e;
   color: #fff;
 }
+
+.img-cv {
+  width: 50%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #ffdf00;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.img-cv:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px #ffdf00;
+}
+
 main section,
 main .col-md-4 > div,
 main .col-md-6 > section {
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
 }
+
 main section:hover,
 main .col-md-4 > div:hover,
 main .col-md-6 > section:hover {
@@ -45,17 +57,7 @@ main .col-md-6 > section:hover {
   cursor: pointer;
   overflow: visible;
 }
-@keyframes cosmic-glow {
-  0%,
-  100% {
-    background-position: 0 50%;
-    box-shadow: 0 0 15px 4px rgba(175, 196, 255, 0.3);
-  }
-  50% {
-    background-position: 100% 50%;
-    box-shadow: 0 0 25px 8px rgba(175, 196, 255, 0.5);
-  }
-}
+
 main section:hover::before {
   content: "";
   position: absolute;
@@ -92,24 +94,26 @@ main .col-md-4 > div:hover::before {
   pointer-events: none;
   z-index: -1;
 }
-.img-cv:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px #ffdf00;
+
+@keyframes cosmic-glow {
+  0%,
+  100% {
+    background-position: 0 50%;
+    box-shadow: 0 0 15px 4px rgba(175, 196, 255, 0.3);
+  }
+  50% {
+    background-position: 100% 50%;
+    box-shadow: 0 0 25px 8px rgba(175, 196, 255, 0.5);
+  }
 }
+
 @media (max-width: 767.98px) {
   .footer-icon {
     width: 24px;
     height: 24px;
   }
+
   .cv-section {
     padding: 1rem;
   }
 }
-.img-cv {
-  width: 50%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px #ffdf00;
-}
-
-
