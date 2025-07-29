@@ -84,7 +84,7 @@ html {
   height: 100vh;
   background: linear-gradient(135deg, #c2dde4, #000, #c2dde4);
   background-size: 300% 300%;
-  animation: 20s infinite gradientCycle;
+  animation: 20s infinite gradient-cycle;
   z-index: -1;
 }
 .floating {
@@ -121,7 +121,7 @@ html {
     }
   }
 }
-@keyframes gradientCycle {
+@keyframes gradient-cycle {
   0%,
   100% {
     background-position: 0 50%;
@@ -130,7 +130,7 @@ html {
     background-position: 100% 50%;
   }
 }
-@keyframes smoothColorChange {
+@keyframes smooth-color-change {
   0%,
   100% {
     color: #0b1f3a;
@@ -144,7 +144,7 @@ html {
 }
     #typing-paragraph,
     #typing-title {
-  animation: 10s ease-in-out infinite smoothColorChange;
+  animation: 10s ease-in-out infinite smooth-color-change;
 }
 @media (max-width: 768px) {
   .card1,

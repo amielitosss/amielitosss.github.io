@@ -87,7 +87,7 @@ footer a:hover img {
   height: 24px;
 }
 @media (max-width: 991px) {
-  #navbarNav {
+  #navbar-nav {
     position: fixed;
     top: 0;
     right: 0;
@@ -98,7 +98,7 @@ footer a:hover img {
     transition: transform 0.3s ease-in-out;
     z-index: 1050;
   }
-  #navbarNav.show {
+  #navbar-nav.show {
     transform: translateX(0);
   }
   body.nav-open {

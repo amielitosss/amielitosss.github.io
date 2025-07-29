@@ -15,20 +15,20 @@
   background-color: #76101e;
   color: #fff;
 }
+main section,
 main .col-md-4 > div,
-main .col-md-6 > section,
-main section {
+main .col-md-6 > section {
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
 }
+main section:hover,
 main .col-md-4 > div:hover,
-main .col-md-6 > section:hover,
-main section:hover {
+main .col-md-6 > section:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   z-index: 10;
   position: relative;
-  animation: 8s infinite cosmicGlow;
+  animation: 8s infinite cosmic-glow;
   background: linear-gradient(
     270deg,
     #a1c4fd,
@@ -45,7 +45,7 @@ main section:hover {
   cursor: pointer;
   overflow: visible;
 }
-@keyframes cosmicGlow {
+@keyframes cosmic-glow {
   0%,
   100% {
     background-position: 0 50%;
