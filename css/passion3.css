@@ -1,0 +1,74 @@
+   html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+     height: 800px;
+     width: 300px;
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin-bottom: 100px;
+    }
+
+    @media (width <= 768px) {
+  .swiper-slide {
+    max-width: 100%;      
+    aspect-ratio: auto;  
+    height: auto;
+  }
+}
+
+
+.parallax {
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.parallax-image {
+  background-image: url('../assets/image/gaming.webp'); 
+}
+
+
+.content {
+  text-align: center;
+  padding: 50px;
+}
+
+
+@media (width <= 768px) {
+  .parallax {
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    background-position-x: center;
+  }
+}

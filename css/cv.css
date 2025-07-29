@@ -1,0 +1,113 @@
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #133769;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #76101e;
+  color: #fff;
+}
+
+.img-cv {
+  width: 50%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #ffdf00;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.img-cv:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px #ffdf00;
+}
+
+main section,
+main .col-md-4 > div,
+main .col-md-6 > section {
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+main section:hover,
+main .col-md-4 > div:hover,
+main .col-md-6 > section:hover {
+  transform: scale(1.03);
+  z-index: 10;
+  position: relative;
+  animation: 8s infinite cosmic-glow;
+  background: linear-gradient(
+    270deg,
+    #a1c4fd,
+    #c2e9fb,
+    #f28b82,
+    #f6f1f1,
+    #fff9c4
+  );
+  background-size: 1400% 1400%;
+  color: #222;
+  border-radius: 12px;
+  transition: color 0.3s;
+  box-shadow: 0 0 15px 4px rgb(175 196 255 / 30%);
+  cursor: pointer;
+  overflow: visible;
+}
+
+main section:hover::before {
+  content: "";
+  position: absolute;
+  inset: -12px;
+  border-radius: 15px;
+  background: radial-gradient(
+    circle at center,
+    rgb(161 196 253 / 35%),
+    transparent 70%
+  );
+  filter: blur(20px);
+  pointer-events: none;
+  z-index: -1;
+}
+
+main .col-md-6 > section:hover::before,
+main .col-md-4 > div:hover::before {
+  content: "";
+  position: absolute;
+  inset: -12px;
+  border-radius: 15px;
+  background: radial-gradient(
+    circle at center,
+    rgb(161 196 253 / 35%),
+    transparent 70%
+  );
+  filter: blur(20px);
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes cosmic-glow {
+  0%,
+  100% {
+    background-position: 0 50%;
+    box-shadow: 0 0 15px 4px rgb(175 196 255 / 30%);
+  }
+
+  50% {
+    background-position: 100% 50%;
+    box-shadow: 0 0 25px 8px rgb(175 196 255 / 50%);
+  }
+}
+
+@media (width <= 767.98px) {
+  .footer-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .cv-section {
+    padding: 1rem;
+  }
+}

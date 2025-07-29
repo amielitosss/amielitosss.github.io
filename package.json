@@ -1,0 +1,26 @@
+{
+  "name": "mon-projet",
+  "version": "1.0.0",
+  "description": "Salut, bienvenue sur mon portfolio... Have fun looking at it :))",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amielitosss/mon-projet.git"
+  },
+  "keywords": [],
+  "author": "Carl Balita",
+  "license": "ISC",
+   "bugs": {
+    "url": "https://github.com/amielitosss/mon-projet/issues"
+  },
+  "homepage": "https://github.com/amielitosss/mon-projet#readme",
+  "devDependencies": {
+    "eslint": "^9.32.0",
+    "htmlhint": "^1.6.3",
+    "stylelint": "^16.22.0",
+    "stylelint-config-standard": "^38.0.0"
+  }
+}

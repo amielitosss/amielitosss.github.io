@@ -1,0 +1,44 @@
+.parallax {
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-image {
+  background-image: url('../assets/image/sc.webp'); 
+}
+
+
+.content {
+  text-align: center;
+  padding: 50px;
+}
+
+
+@media (width <= 768px) {
+  .parallax {
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    background-position-x: center;
+  }
+
+ .container {
+    margin: 50px;
+  }
+
+  .parallax .container{
+      margin-top: 200px;
+  }
+
+ 
+}
+
+
+
+
