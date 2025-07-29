@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Cloner le dépôt
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Installer Node.js
         uses: actions/setup-node@v3
@@ -46,4 +48,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: mon-projet
+          publish_dir: ./mon-projet
+          clean: true
