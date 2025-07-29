@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Navbar toggler events (if elements exist)
-  const nav = document.getElementById("navbarNav");
+  const nav = document.getElementById("navbar-nav");
   const toggler = document.querySelector(".navbar-toggler");
   if (nav && toggler) {
     nav.addEventListener("show.bs.collapse", () => document.body.classList.add("nav-open"));
