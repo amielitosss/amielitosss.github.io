@@ -1,13 +1,7 @@
-name: CI + Déploiement GitHub Pages
-
 on:
   push:
-    branches: [ main ]
-
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+    branches:
+      - main
 
 jobs:
   build-and-deploy:
@@ -23,28 +17,33 @@ jobs:
           node-version: '18'
 
       - name: Installer les dépendances
+        working-directory: mon-projet
         run: npm install
 
       - name: Installer HTMLHint
+        working-directory: mon-projet
         run: npm install -g htmlhint --save-dev
 
       - name: Vérifier le HTML
+        working-directory: mon-projet
         run: npx htmlhint .
 
       - name: Installer stylelint globalement
         run: sudo npm install -g stylelint
 
       - name: Vérifier le CSS
+        working-directory: mon-projet
         run: npx stylelint "**/*.css"
 
       - name: Installer ESLint
         run: npm install -g eslint
 
       - name: Vérifier le JS
+        working-directory: mon-projet
         run: npx eslint .
 
       - name: Déployer sur GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
+          publish_dir: mon-projet
