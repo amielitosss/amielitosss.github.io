@@ -8,18 +8,18 @@
     <meta name="copyright" content="Carl Balita" />
     <meta name="robots" content="index, follow" />
 
-    <link rel="shortcut icon" href="../image/logo.webp" type="image/x-icon">
+     <link rel="shortcut icon" href="../assets/image/logo.webp" type="image/x-icon">
+
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Titillium+Web:wght@400;700&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
 
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Titillium+Web:wght@400;700&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
 
-
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- css boot -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
    <link rel="stylesheet" href="../css/style.css">
-   <link rel="stylesheet" href="../css/passion2.css">
+   <link rel="stylesheet" href="../css/passion3.css">
 
    <title>Projet Perso</title>
 
@@ -34,7 +34,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="nav-container container-fluid">
       <a  href="../Html/index.html" class="logo-link d-flex align-items-center">
-        <img src="../image/logo.webp" alt="Logo" class="logo-image">
+        <img src="../assets/image/logo.webp" alt="Logo" class="logo-image">
         <span class="logo-text"></span>
       </a>
 
@@ -45,8 +45,7 @@
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
-       <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <button type="button" class="btn-close btn-close-white ms-auto d-lg-none mb-4" aria-label="Close" id="closeNav"></button>
         <ul class="navbar-nav ms-auto justify-content-center ">
           <li class="nav-item justify-content-center  bg-light rounded-3 mb-2 ">
@@ -73,52 +72,38 @@
   </nav>
 </header>
 
+
+
  <main class="flex-fill">
   <div class="parallax parallax-image">
     <div class="content">
     </div>
   </div>
 
-   <div class="container py-5">
+ <div class="container py-5">
       <div class="text-center text-white mb-5" style="background-color: #76101e; border-radius: 10px; padding: 2rem;">
-        <h2 class="fs-1"><strong>Coding</strong></h2>
-        <p>J'ai trouvé le codage comme ma vraie profession à l'époque, mais avant de coder, j'ai choisi la voie d'être cuisinier, puis j'ai réalisé que ce n'était pas vraiment pour moi et mon cœur va vraiment dans les technologies...</p>
+        <h2 class="fs-1"><strong>Gaming</strong></h2>
+        <p>Le jeux video est devenu mon hobby depuis lors, il me rend heureux et c'est même parfois mon moyen de soulager le stress, j'ai essayé le streaming à l'époque juste pour le plaisir... le jeu a toujours été ma passion...</p>
       </div>
-   </div>
 
-  <div class="row g-5">
 
-     <div class="col-md-12 col-lg-4 justify-content-center mb-5 px-5">
-      <img src="../image/moncode.webp" class="img-fluid rounded coding-img" alt="Projet 1">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="../assets/image/2k.webp" alt="2k"></div>
+      <div class="swiper-slide"><img src="../assets/image/valo.webp" alt="valorant"></div>
+      <div class="swiper-slide"><img src="../assets/image/brawl.webp" alt="brawlhalla"></div>
+      <div class="swiper-slide"><img src="../assets/image/apex.webp" alt="apex"></div>
     </div>
-     <div class="col-md-12 col-lg-4 justify-content-center mb-5 px-5">
-      <img src="../image/gitgit.webp" class="img-fluid rounded coding-img" alt="Projet 2">
-    </div>
-     <div class="col-md-12 col-lg-4 justify-content-center mb-5 px-5">
-      <img src="../image/pccode.webp" class="img-fluid rounded coding-img" alt="Projet 3">
-    </div>
-     <div class="col-md-12 col-lg-4 justify-content-center mb-5 px-5">
-      <img src="../image/mycode.webp" class="img-fluid rounded coding-img" alt="Projet 4">
-    </div>
-     <div class="col-md-12 col-lg-4 justify-content-center mb-5 px-5">
-      <img src="../image/Figma.webp" class="img-fluid rounded coding-img" alt="Projet 5">
-    </div>
-     <div class="col-md-12 col-lg-4 justify-content-center mb-5 px-5">
-      <img src="../image/mode83.webp" class="img-fluid rounded coding-img" alt="Projet 6">
-    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
 
-
-
-
-
-
-
-
- <div class="container content-section mb-5">
+  <div class="container content-section mb-5">
   <div class="row justify-content-center g-4">
     <div class="col-md-4">
       <div class="card h-100 text-center">
-        <img src="../image/sc.webp" class="card-img-top h-100" alt="Image 1">
+        <img src="../assets/image/sc.webp" class="card-img-top h-100" alt="Image 1">
         <div class="card-body">
           <a href="../Html/passion1.html" class="btn btn-danger">Go to Passion Sports</a>
         </div>
@@ -126,17 +111,17 @@
     </div>
     <div class="col-md-4">
       <div class="card h-100 text-center">
-        <img src="../image/passion.webp" class="card-img-top" alt="Image 2">
+        <img src="../assets/image/coder.webp" class="card-img-top" alt="Image 2">
         <div class="card-body">
-          <a href="../Html/passion.html" class="btn btn-danger">Go Back to Passion Page</a>
+          <a href="../Html/passion2.html" class="btn btn-danger">Go to Passion Coding</a>
         </div>
       </div>
     </div>
     <div class="col-md-4">
       <div class="card h-100 text-center">
-        <img src="../image/gaming.webp" class="card-img-top" alt="Image 3">
+        <img src="../assets/image/passion.webp" class="card-img-top" alt="Image 3">
         <div class="card-body">
-          <a href="../Html/passion3.html" class="btn btn-danger">Go to Passion Gaming</a>
+          <a href="../Html/passion.html" class="btn btn-danger">Go Back to Passion Page</a>
         </div>
       </div>
     </div>
@@ -146,29 +131,61 @@
 
 
 
+
+
+
+
+
+
+
+
+
 <footer class="bg-dark text-white py-3 mt-auto">
   <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
     <p class="mb-2 mb-md-0">© Copyright 2025 - CarlBalita</p>
     <div class="d-flex gap-3">
       <a href="https://www.facebook.com/share/1Beo8i9Qr6/" target="_blank">
-        <img src="../image/fb.webp" alt="Facebook" class="footer-icon">
+        <img src="../assets/image/fb.webp" alt="Facebook" class="footer-icon">
       </a>
       <a href="https://github.com/amielitosss" target="_blank">
-        <img src="../image/github.webp" alt="GitHub" class="footer-icon">
+        <img src="../assets/image/github.webp" alt="GitHub" class="footer-icon">
       </a>
       <a href="https://www.instagram.com/crl_blt?igsh=MWtscjB2d3R6Y2g0bA==" target="_blank">
-        <img src="../image/ig.webp" alt="Instagram" class="footer-icon">
+        <img src="../assets/image/ig.webp" alt="Instagram" class="footer-icon">
       </a>
       <a href="https://www.linkedin.com/in/carl-amiel-balita-470b562bb/" target="_blank">
-        <img src="../image/linkedin.webp" alt="LinkedIn" class="footer-icon">
+        <img src="../assets/image/linkedin.webp" alt="LinkedIn" class="footer-icon">
       </a>
     </div>
   </div>
 </footer>
 
 
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    let swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
  <!-- Bootstrap JS Bundle (includes Popper) -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+ 
  <script src="../index.js"></script>
 </body>
 </html>
