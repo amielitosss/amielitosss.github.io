@@ -33,7 +33,7 @@ jobs:
 
       - name: Vérifier le CSS
         working-directory: mon-projet
-        run: npx stylelint "**/*.css"
+        run: npx stylelint "**/*.css" --fix
 
       - name: Installer ESLint
         run: npm install -g eslint
