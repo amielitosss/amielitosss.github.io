@@ -61,6 +61,7 @@ span {
   transition: color 0.3s;
   padding-bottom: 4px;
 }
+
 .navbar-nav .nav-link::after {
   content: "";
   position: absolute;
@@ -71,10 +72,17 @@ span {
   background: #76101e !important;
   transition: width 0.3s;
 }
-.navbar-nav .nav-link:focus,
-.navbar-nav .nav-link:hover {
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link:focus::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
   color: #76101e !important;
 }
+
 footer a img {
   filter: brightness(0) invert(1);
   transition: transform 0.2s;
