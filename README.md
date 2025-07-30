@@ -1,1 +1,1 @@
-Salut, bienvenue sur mon portfolio... Have fun looking at it :))
+Salut, bienvenue sur mon portfolio... Have fun looking at it 
