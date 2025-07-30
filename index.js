@@ -99,3 +99,20 @@ const observer = new IntersectionObserver((t) => {
     });
   })
 });
+
+  const topBtn = document.getElementById("topBtn");
+
+  window.onscroll = function () {
+    const scrollHeight = document.documentElement.scrollHeight;
+    const scrollPos = window.innerHeight + window.scrollY;
+
+    if (scrollHeight - scrollPos < 100) {
+      topBtn.classList.remove("d-none");
+    } else {
+      topBtn.classList.add("d-none");
+    }
+  };
+
+  topBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
